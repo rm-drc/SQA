@@ -1,0 +1,59 @@
+{
+  "name": "DownloadOTTForm",
+  "request": {
+    "headers": "Host: {{F5Host}}\nConnection: keep-alive\nAccept: application/json, text/javascript, */*; q=0.01\nX-Requested-With: XMLHttpRequest\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36\nReferer: https://{{hostname}}/{{client}}/\nAccept-Language: en-US,en;q=0.8",
+    "path": "/Resources/{{AdministrationID}}/Forms/{{Form}}/{{Version}}/content.json",
+    "assert": "{{Version}}"
+  },
+  "clients": [
+    {
+      "client": "MI",
+	  "F5Host":"mi-insight-client.drcedirect.com",
+	  "AdministrationID":"523577",
+	  "Form":"120766",
+	  "Version":"2015_01_29_102440"
+    },
+    {
+      "client": "PA",
+	  "F5Host":"pa-insight-client.drcedirect.com",
+	  "AdministrationID":"550479",
+	  "Form":"115814",
+	  "Version":"2014_11_14_152423"
+    },
+	{
+      "client": "SC",
+	  "F5Host":"sc-insight-client.drcedirect.com",
+	  "AdministrationID":"520512",
+	  "Form":"113030",
+	  "Version":"2014_11_14_103902"
+    },
+	{
+      "client": "NE",
+	  "F5Host":"ne-insight-client.drcedirect.com",
+	  "AdministrationID":"528007",
+	  "Form":"115833",
+	  "Version":"2014_08_29_112707"
+    },
+	{
+      "client": "MO",
+	  "F5Host":"mo-insight-client.drcedirect.com",
+	  "AdministrationID":"526515",
+	  "Form":"121461",
+	  "Version":"2015_03_29_153027"
+    },
+	{
+      "client": "ID",
+	  "F5Host":"id-insight-client.drcedirect.com",
+	  "AdministrationID":"513446",
+	  "Form":"117071",
+	  "Version":"2015_02_26_110631"
+    },
+	{
+      "client": "WIDA",
+	  "F5Host":"wida-insight-client.drcedirect.com",
+	  "AdministrationID":"596371",
+	  "Form":"117227",
+	  "Version":"2014_10_17_100044"
+    }
+  ]
+}
